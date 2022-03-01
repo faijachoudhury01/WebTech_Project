@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faija Choudhury</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- use the meta option to change the view of the screen according to the width of the user's screen. -->
+    <style>
+      body {
+        background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      h1 {
+        color: brown;
+        font-family: serif;
+        text-align: center;
+      }
+
+      h2 {
+        font-family: "Tangerine", serif;
+        font-size: 48px;
+      }
+      h3 {
+        color: rgb(22, 110, 110);
+        text-align: center;
+        font-family: cursive;
+      }
+      /* This set the color to a specific RGB coordinate while making the text cursive and aligning it to the center*/
+      p {
+        font-family: sans-serif;
+        color: rgb(75, 187, 168);
+        size: 1.2em;
+      }
+      p::first-line {
+        text-indent: 30px;
+      }
+      img {
+        float: right;
+        width: 120px;
+        height: 100%auto;
+      }
+      /* the auto allows the image to fit to the original size of the image */
+      body {
+        background-color: blanchedalmond;
+        margin-right: 30px;
+        margin-left: 30px;
+      }
+      ul{
+        list-style-type: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: antiquewhite;
+      }
+
+      li{
+        float: left;
+      }
+
+      li a, .dropd{
+        display: inline-block;
+        color: aliceblue;
+        text-align: center;
+        padding: 14px 15px;
+        text-decoration: none;
+      }
+
+      li a:hover, .dropdown:hover .dropd{
+        background-color: aquamarine;
+      }
+
+      li.dropdown{
+        display: inline-block;
+      }
+
+      drop-content{
+        color: black;
+        padding: 12px 15px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      drop-content a:hover{
+        background-color: blue;
+      }
+
+      .dropdown:hover .drop-content {
+        display: block;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <h1>All about Faija Choudhury</h1>
+    <hr />
+    <img
+      src="https://c.tenor.com/pvFJwncehzIAAAAC/hello-there-private-from-penguins-of-madagascar.gif"
+      alt="Little Penguins is saying hi"
+      title="hello"
+      width="200px"
+    />
+    <hr />
+
+    <h2>About Me</h2>
+    <img src="images/faija.jpg" alt="Faija" title="hello" width="200px" />
+
+    <p>
+      I am a sophomore at Babson College. I chose Babson because it's one of the
+      best business school. On top of that I got a
+      <a href="https://possefoundation.org/"> Posse Scholarship</a> for
+      <a href="http://www.babson.edu/"> Babson</a> . I want to work on both
+      accounting and IT after graduation. I am looking for opportunities to
+      explore the career option.
+    </p>
+
+    <h2>My interest</h2>
+    <p>
+      I would consider my favorite sports to be
+      <em> <a href="https://wikipedia.org/wiki/Cricket">Cricket</a> </em> and
+      <em> <a href="https://wikipedia.org/wiki/badminton"> badminton </a></em> I
+      have not played cricket in a long time. However, I still occasionally play
+      badminton.
+    </p>
+
+    <hr />
+
+    <h3>My Work in WebTech</h3>
+
+    <p>
+      <a
+        href="https://github.com/faijachoudhury01/WebTech/blob/main/sitemap.html"
+        >sitemap</a
+      >
+    </p>
+    <!-- <h3>Contact Information</h3>
+    <a href="mailto: fchoudhury1@babson.edu"> Send Email </a> -->
+
+
+    <ul>
+        <li>
+          <a class="active" href="#home"> Home </a>
+        </li>
+        <li>
+          <a href="#Github"> Github </a>
+        </li>
+        <li class ="dropdown" >
+          <a href="javascript:void(0)" class="dropd"> Dropdown </a>
+          <div class="drop-content">
+             <a href="#"> hw02-01 </a> 
+             <a href="#"> hw02-02 </a>
+             <a href="#"> hw02-bbc </a>  
+          </div>
+        </li>
+
+    </ul>
+
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11804.641721027172!2d-71.2657077!3d42.2964421!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ef71f3899e76a89!2sBabson%20College!5e0!3m2!1sen!2sus!4v1644964067241!5m2!1sen!2sus"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </body>
+</html>
