@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Bangladesh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      herf="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+
+    <!-- use the meta option to change the view of the screen according to the width of the user's screen. -->
+    <!-- TODO: Use more Meta function   -->
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"> <img src="Images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu"></i>
+          <ul>
+            <li><a href=""> Home </a></li>
+            <li><a href=""> History </a></li>
+            <li><a href=""> About the creator </a></li>
+            <li><a href=""> Contact </a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu"></i>
+      </nav>
+
+      <h1> History of Bangladesh </h1>
+      
+    </section>
+
+    <!-- Content -->
+
+    <section class="history">
+      <table>
+        <tr>
+          <td colspan="2">Our Historical Timeline </td>
+        </tr>
+        <tr>
+            <td>
+             1947 Partition  of British India
+            </td>
+            <td>
+              In 1947, partition gave way to two new states. These were India, with a Hindu majority population and Pakistan, with a Muslim majority population. Pakistan is comprised of two distinct areas, separated both culturally, and geographically. India filled the thousand miles of land between these two regions. Political power was concentrated in West Pakistan, which led to grievances in East Pakistan (now Bangladesh).
+            </td>
+        </tr>
+        <tr>
+          <td>
+            1947 – 1971 Pakistan period - Bengali language movement
+          </td>
+          <td> 
+            In 1948, Mohammad Ali Jinnah, Pakistan's Governor-General, declared that "Urdu, and only Urdu" would be Pakistan's state language. This decision was unacceptable to Bengalis and led to birth of the language movement. Urdu was hardly spoken by anybody in the East.  The decision led to protests. On 20 February 1952, the Pakistani Government issued Section 144, restricting gatherings and rallies.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            21 February 1952 – Martyrs’ Day
+          </td>
+          <td> 
+            On 21 February, Bengali students gathered, defying Section 144. The police opened fire, killing four students, one other person and injuring many. The language movement led to the realisation that the Bengalis constituted a separate nation. Their destiny lay not with Pakistan but elsewhere as an independent country.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            7 March 1971 speech
+          </td>
+          <td> 
+            On 7 March 1971, as the military and the West's political leadership was conspiring not to hand over power to Bangabandhu Sheikh Mujibur Rahman, he delivered a fiery speech at the Racecourse Ground against the ruling elite. He urged ‘his people’ to turn every house into a fort of resistance. He closed his speech by saying,
+
+            "Our struggle is for our freedom; our struggle is for our independence. Joi Bangla!"
+
+            This powerful speech inspired the Bengali nation to fight for its independence. In 2016 the speech was recognised by UNESCO and archived in its Memory of the World Programme.
+
+            In Tower Hamlets, a school in Bethnal Green, Bangabandhu Primary, is named in his honour.  The ‘7 March Foundation’ was set up in 2018 to propagate Bangabandhu’s ideals.
+
+            This year Bangladesh is also observing Bangabandhu Sheikh Mujibur Rahman's 100 birth anniversary.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            26 March 1971 – 16 December 1971, The Liberation War of Bangladesh
+          </td>
+          <td> 
+            There were spontaneous uprisings throughout Bangladesh following the declaration of independence on 26 March 1971. On 12 April 1971, Colonel MAG Osmani was appointed Commander-in-chief of Bangladesh Forces known as the Mukti Bahini. In addition to Mukti Bahini, guerrilla groups led by individual leaders successfully controlled some areas within Bangladesh.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            16 December 1971 - Victory Day
+
+          </td>
+          <td> 
+            On 21 November 1971, Bangladesh Muktu Bahini and the Indian forces formed an Allied Command and went on to defeat the West Pakistani army. The resulting surrender was the largest in the number of prisoners of war since World War II. Victory against Pakistan was declared on 16 December 1971.
+          </td>
+        </tr>
+        <!-- need to add more detail/ events on the timeline -->
+      </table>
+
+    <!-- <div class="row">
+        <div class="historyCol">
+          <h1> Who we were </h1>
+          <p> mention how bangladesh was part of india and all that</p>
+         <!-- include a image later on -->
+        <!-- </div>
+        <div class="historyCol"></div>
+        <div class="historyCol"></div>
+      </div>  -->
+     -->
+
+    </section>
+    
+   
+
+
+    <section class="copyRight">
+      <h4> Copy Right</h4>
+      <p>
+        Made with <i class="fa fa-heart-o"> </i> by Faija Choudhury
+      </p>
+
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <hr />
+  </body>
+</html>
