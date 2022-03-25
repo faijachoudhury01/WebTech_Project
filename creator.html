@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Bangladesh - History</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      herf="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+
+    <!-- use the meta option to change the view of the screen according to the width of the user's screen. -->
+    <!-- TODO: Use more Meta function   -->
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="Images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu"></i>
+          <ul>
+            <li><a href=""> Home </a></li>
+            <li><a href=""> History </a></li>
+            <li><a href=""> About the creator </a></li>
+            <li><a href=""> Contact </a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu"></i>
+      </nav>
+        <h1> Creator of the page </h1>
+      </section>
+    
+    <!-- About the creator -->
+      <section>
+       <h2> Faija Choudhury </h2>
+        <img src="images/faija.jpg" alt="Faija" title="hello" width="200px" />
+
+        <p>
+          I am a sophomore at Babson College. I chose Babson because it's one of the
+          best business school. On top of that I got a
+          <a href="https://possefoundation.org/"> Posse Scholarship</a> for
+          <a href="http://www.babson.edu/"> Babson</a> . I want to work on both
+          accounting and IT after graduation. I am looking for opportunities to
+          explore the career option.
+        </p>
+
+        <h2>My interest</h2>
+        <p>
+          I would consider my favorite sports to be
+          <em> <a href="https://wikipedia.org/wiki/Cricket">Cricket</a> </em> and
+          <em> <a href="https://wikipedia.org/wiki/badminton"> badminton </a></em> I
+          have not played cricket in a long time. However, I still occasionally play
+          badminton.
+        </p>
+
+      </section>
+
+    <section class="copyRight">
+      <h4> Copy Right</h4>
+      <p>
+        Made with <i class="fa fa-heart-o"> </i> by Faija Choudhury
+      </p>
+
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <hr />
+  </body>
+</html>
