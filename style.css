@@ -105,7 +105,7 @@ nav .fa {
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
     background: lightpink;
     height: 100vh;
     width: 200px;
@@ -128,154 +128,242 @@ nav .fa {
   .nav-links ul {
     padding: 30px;
   }
-  .row{
-      flex-direction: column;
+  .row {
+    flex-direction: column;
   }
 }
 
-
-.historicalFeatures{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
+.historicalFeatures {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
 }
 
-h1{
-    font-size:36px;
-    font-weight: 600;
+h1 {
+  font-size: 36px;
+  font-weight: 600;
 }
 
-p{
-    color: black;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    padding: 10px;
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
 }
 
-.row{
-    margin: 5%;
-    display: flex;
-    justify-content: space-between;
+.row {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.memory-col{
-    flex-basis: 30%;
-    background: lightgreen;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-
+.memory-col {
+  flex-basis: 30%;
+  background: lightgreen;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
-he{
-    text-align: center;
-    font-weight: 600;
-    margin: 10px, 0;
-}
-
-
-.memory-col:hover{
-    box-shadow: 0 0 20px 0  rgba(0, 0, 0, 0.2);
-
-
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px, 0;
 }
 
-.places{
-    width: 80%;
-    margin: auto;
-    text-align: center ;
-    padding-top:  50px;
+.memory-col:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.places-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+.places {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
 }
 
-.places-col img{
-    width: 100%;
+.places-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+.places-col img {
+  width: 100%;
 }
 
-.layer :hover{
-    background: rgba(145, 83, 83, 0.7);
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
 }
 
-.copyRight{
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
+.layer :hover {
+  background: rgba(145, 83, 83, 0.7);
 }
 
-.copyRight h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
+.copyRight {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
 }
 
-.fa-heart-o{
-    color: red;
-    margin: 0 13px;
-    padding: 18px 0;
+.copyRight h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
 }
 
+.fa-heart-o {
+  color: red;
+  margin: 0 13px;
+  padding: 18px 0;
+}
 
 /* History page */
-.subheader{
-    height:50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30, 0.7), rgba( 4, 9, 30, 0.7)), url(images/history.jpg);
-    /* the image is not showing NEED TO WORK ON THAT */
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: white;
+.subHeader1 {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/history.jpg);
+  /* the image is not showing NEED TO WORK ON THAT */
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
 }
 
-.subheader h1{
-    margin-top: 100px;
-
+.subHeader1 h1 {
+  margin-top: 100px;
 }
 
-.historyCol{
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
-    }
+.historyCol {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
 
-    .historyCol
+.historyCol table {
+  border: 5px rgb(84, 152, 211) solid;
+  border-collapse: collapse;
+  margin: 20px;
+  width: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: azure;
+}
 
-
-table {
-    border: 5px rgb(84, 152, 211) solid;
-    border-collapse: collapse;
-    margin: 20px;
-    width: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: azure;
-  }
-
-tr, td {
-    border: 1px rgb(139, 190, 235) dotted;
-    padding: 3px;
-    vertical-align: top;
-  }
-
+tr,td {
+  border: 1px rgb(139, 190, 235) dotted;
+  padding: 3px;
+  vertical-align: top;
+}
 
 /* about page */
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: rgb(109, 27, 27);
+  font-family: serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Tangerine", serif;
+  font-size: 30px;
+  color: rgb(189, 127, 127);
+  text-align: center;
+}
+h3 {
+  color: rgb(22, 110, 110);
+  text-align: center;
+  font-family: cursive;
+  margin-inline-start: 2px;
+}
+/* This set the color to a specific RGB coordinate while making the text cursive and aligning it to the center*/
+p {
+  font-family: sans-serif;
+  color: rgb(75, 187, 168);
+  size: 1.2em;
+}
+p::first-line {
+  text-indent: 5
+  50px;
+}
+
+img {
+  float: right;
+  width: 120px;
+  height: 100%auto;
+}
+/* the auto allows the image to fit to the original size of the image */
+
+
+.location{
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe{
+  width: 100%;
+}
+
+.contactUs{
+  width: 80%;
+  margin: auto;
+}
+
+.contactCol{
+  flex-basis: 48;
+  margin-bottom: 30px;
+}
+
+.contactCol div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+.contactCol div .fa{
+  font-size: 28px;
+  color: rgb(87, 167, 236);
+  margin: 10px;
+  margin-right: 30px;
+}
+
+.contactCol div p{
+  padding: 0;
+}
+
+.contactCol div h5{
+  font-size: 20px;
+  margin-bottom: 5p;
+  color: rgb(30, 137, 156);
+  font-weight: 400;
+}
+
+.contactCol input, .contactCol textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
