@@ -74,8 +74,8 @@ nav img {
 }
 
 .visitButton {
-  width: 25px;
-  height: 150px;
+  width: 150px;
+  height: 15px;
   display: inline-block;
   text-decoration: none;
   color: white;
