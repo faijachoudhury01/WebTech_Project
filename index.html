@@ -23,9 +23,9 @@
   <body>
     <section class="header">
       <nav>
-        <a href="index.html"> <img src="Images/logo.png" /></a>
+        <a href="index.html" class="animation"> <img src="Images/logo.png" /></a>
         <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu"></i>
+          <i class="fa fa-bars" aria-hidden="true"></i>
           <ul>
             <li><a href="index.html"> Home </a></li>
             <li><a href="history.html"> History </a></li>
@@ -33,7 +33,7 @@
             <li><a href="contract.html"> Contact </a></li>
           </ul>
         </div>
-        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu"></i>
+        <i class="fa fa-times" aria-hidden="true" onclick="showMenu"></i>
       </nav>
 
       <div class="text-box">
@@ -56,7 +56,7 @@
         <div class="memory-col">
           <h3> Shriti Shoido </h3>
           <br>
-          <img src="Images/sritiShoudho.jpg" />
+          <img src="Images/sritiShoudho.jpg" class="memory"/>
           <br>
           <p>
             National Martyrs' Memorial situated at Savar, about 35 km north-west of Dhaka, symbolises the valour and sacrifice of the martyrs who sacrificed their lives for the liberation of Bangladesh.
@@ -66,7 +66,7 @@
         <div class="memory-col">
           <h3> Shahid Minar </h3>
           <br>
-          <img src="Images/sritiShoudho.jpg" />
+          <img src="Images/sritiShoudho.jpg" class="memory" />
           <br>
           <p>
               The Shaheed Minar is a national monument in Dhaka, Bangladesh, established to commemorate those killed during the Language Movement demonstrations of 1952.
@@ -75,7 +75,7 @@
         <div class="memory-col">
           <h3> Swadhinata Stambha </h3>
           <br>
-          <img src="Images/swandhinata.jpg" />
+          <img src="Images/swandhinata.jpg" class="memory"/>
           <p>
             Independence Monument is a national monument in Bangladesh to commemorate the historical events that took place in the Suhrawardy Udyan, previously known as Ramna Race Course ground regarding the Liberation War of Bangladesh.
           </p>
@@ -93,7 +93,7 @@
         silent imputation of parsimony that such close dealing implied. One dollar
         and eighty-seven cents.
       </p>
-      <div class="row">
+      <div class="pride">
         <div class="places-col">
           <img src="images/coxbazar.jpg" alt=" coxbazar">
           <div class="layer"> 
@@ -121,9 +121,12 @@
 
 
     <section class="copyRight">
-      <span class="copyright">&copy</span>
       <p>
-         Made with  by Faija Choudhury
+        <span class="copyright">&copy</span>
+        Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Faija
+        Choudhury
+
+        <!-- there is supposed to be an heart between made with and by Faija Choudhury. I am not sure why it is not showing -->
       </p>
 
     </section>

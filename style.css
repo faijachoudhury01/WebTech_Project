@@ -25,6 +25,26 @@ nav img {
   width: 100px;
 }
 
+.animation{
+  height: 100px;
+  /* background: lightgreen; */
+  position: relative;
+  animation-name: animation;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animation {
+  from {top: 0px; }
+  to {top: 600px; background-color: yellow;}
+}
+
+/* I want the animation to happen in the homepage only. */
+
+/* I have not used animation before so I went with a simple one. In future, I want to use small images to draw the flag. (each second a tile of the image will show, slowly revealing the flag */
+
+
 .nav-links {
   flex: 1;
   text-align: right;
@@ -133,6 +153,14 @@ nav .fa {
   .row {
     flex-direction: column;
   }
+
+  .pride {
+    flex-direction: column;
+  }
+}
+
+.fa fa-heart-o{
+  display: none;
 }
 
 .historicalFeatures {
@@ -157,18 +185,31 @@ p {
 
 .row {
   margin: 5%;
-  display: flex;
+  display:list-item;
+  justify-content:center;
+}
+
+.pride {
+  margin: 5%;
+  display:inline-flexbox;
   justify-content: space-between;
+}
+
+.memory{
+  width: auto; 
+  height: auto;
+
 }
 
 .memory-col {
   flex-basis: 30%;
-  background: lightgreen;
+  background: rgb(161, 219, 161);
   border-radius: 10px;
   margin-bottom: 5%;
-  padding: 20px 12px;
+  padding: 10px 12px;
   box-sizing: border-box;
   transition: 0.5s;
+  align-items: center;
 }
 h3 {
   text-align: center;
@@ -188,7 +229,7 @@ h3 {
 }
 
 .places-col {
-  flex-basis: 320%;
+  flex-basis: 300%;
   border-radius: 10px;
   margin:5px;
   position: relative;
@@ -198,6 +239,7 @@ h3 {
 
 .places-col img {
   width: 100%;
+  height: 100%;
 }
 
 .layer {
@@ -243,15 +285,17 @@ h3 {
   background-size: cover;
   text-align: center;
   color: white;
+  padding: 5%;
 }
 
 .subHeader1 h1 {
-  margin-top: 100px;
+  margin-top:auto;
+  padding: 5%;
 }
 
 .historyCol {
   width: 80%;
-  margin: auto;
+  margin: 50%;
   padding-top: 80px;
   padding-bottom: 50px;
 }
@@ -259,15 +303,16 @@ h3 {
 .historyCol table {
   border: 5px rgb(84, 152, 211) solid;
   border-collapse: collapse;
-  margin: 20px;
+  margin: 20%;
   width: 50px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: azure;
+  padding-left: 20%;
 }
 
 tr,td {
   border: 1px rgb(139, 190, 235) dotted;
-  padding: 3px;
+  padding: 10px;
   vertical-align: top;
 }
 
