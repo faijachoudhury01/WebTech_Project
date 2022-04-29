@@ -56,16 +56,16 @@
         <div>
           <i class ="fa fa-email"></i>
           <span>
-            <h5>faijachoudhury01@gmail.com /h5>
+            <h5>faijachoudhury01@gmail.com </h5>
             <p> Email me if you have any concerns or questions!</p>
           </span>
         </div>
         <form action="">
-          <input type="text" placeholder=" Enter your name" required>
-          <input type="text" placeholder= " Enter your email" required>
-          <input type="text" placeholder="Subject" required>
-          <textarea rows="8" placeholder="Message" required> </textarea>
-          <button type="submit" class ="messageaeButton"> Send Message </button>
+          <input type="text" placeholder= "Enter your name" required id="name">
+          <input type="text" placeholder= "Enter your email" required id="email">
+          <input type="text" placeholder= "Subject" required>
+          <textarea rows="8" placeholder= "Message" required id="message"> </textarea>
+          <button type="submit" class ="messageButton" id="submit"> Send Message </button>
         </form>
       </div>
     </section>
@@ -77,6 +77,22 @@
     </section>
 
     <script>
+
+      function valid(){
+       let name = document.getElementById("name").value;
+       let text;
+       if (isNaN(name) || name == Number){
+         text = "Input is not valid"
+       }
+       else{
+         text = "input is ok"
+       }
+      }
+
+      function validateEmail(email) {
+        
+      }
+
       var navLinks = document.getElementById("navLinks");
       function showMenu() {
         navLinks.style.right = "0";

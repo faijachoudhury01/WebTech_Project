@@ -188,11 +188,12 @@ h3 {
 }
 
 .places-col {
-  flex-basis: 32%;
+  flex-basis: 320%;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin:5px;
   position: relative;
   overflow: hidden;
+  padding: auto;
 }
 
 .places-col img {
@@ -210,7 +211,7 @@ h3 {
 }
 
 .layer :hover {
-  background: rgba(145, 83, 83, 0.7);
+  background: rgba(221, 200, 200, 0.7);
 }
 
 .copyRight {
@@ -311,7 +312,7 @@ p::first-line {
 img {
   float: right;
   width: 120px;
-  height: 100%auto;
+  height: 100% auto;
 }
 /* the auto allows the image to fit to the original size of the image */
 
