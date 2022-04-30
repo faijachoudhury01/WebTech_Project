@@ -49,7 +49,7 @@
       <h1> Historical Places</h1>
       <p> </p>
 
-      <!-- planning to do historial features -->
+      <!-- planning to do historical features -->
       <!-- Will update the writing when finish the structural coding -->
 
       <div class="row">
@@ -89,13 +89,13 @@
       <p>
         One dollar and eighty-seven cents. That was all. And sixty cents of it was
         in pennies. Pennies saved one and two at a time by bulldozing the grocer
-        and the vegetable man and the butcher until one’s cheeks burned with the
+        and the vegetable man and the butcher until one's cheeks burned with the
         silent imputation of parsimony that such close dealing implied. One dollar
         and eighty-seven cents.
       </p>
       <div class="pride">
         <div class="places-col">
-          <img src="images/coxbazar.jpg" alt=" coxbazar">
+          <img src="Images/coxbazar.jpg" alt=" coxbazar">
           <div class="layer"> 
             <h3> Cox's Bazar </h3>
           </div>
@@ -103,14 +103,14 @@
         
         
         <div class="places-col">
-          <img src="images/sunderban.jpg" alt=" Sunderban">
+          <img src="Images/sunderban.jpg" alt=" Sunderban">
           <div class="layer"> 
             <h3> Sunderban</h3>
            </div>
         </div>
         
         <div class="places-col">
-          <img src="images/Gaur.jpg" alt= "  Gaur (Lakhnauti)">
+          <img src="Images/Gaur.jpg" alt= "  Gaur (Lakhnauti)">
           <div class="layer"> 
           <h3>  Gaur (Lakhnauti) </h3>
           </div>
@@ -118,6 +118,34 @@
       <div>
     </section>
     
+    <script>
+      <button> Ask</button>;
+      <p id="message"></p>;
+      <img src="" alt="" />;
+
+    
+        function interest() {
+          console.log("...starting...");
+          const age = window.prompt("How old are you?");
+          // console.log(age);
+          const country = window.prompt("Would you like to visit Bangladesh?");
+          const imageEl = document.querySelector("img");
+          const messageEl = document.querySelector("#message");
+          if (age >= 21 || country.toLocaleLowerCase() == "china") {
+            console.log("Yes, you can!");
+            messageEl.innerText = "Yes, you can!";
+            imageEl.src = "images/beaver.jpg";
+          } else {
+            console.log("No, you cannot!");
+            messageEl.innerText = "No, you cannot!";
+            imageEl.src = "images/smiley.gif";
+          }
+        }
+        document.querySelector("button").onclick = function () {
+          interest();}
+
+        // the question is not showing up
+    </script>
 
 
     <section class="copyRight">
@@ -139,6 +167,7 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+      
     </script>
     <hr />
   </body>

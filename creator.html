@@ -35,34 +35,99 @@
         </div>
         <i class="fa fa-bars" aria-hidden="true" onclick="showMenu"></i>
       </nav>
-        <h1> Creator of the page </h1>
-      </section>
-    
+      <h1>Creator of the page</h1>
+    </section>
+
     <!-- About the creator -->
-      <section>
-        <br>
-       <h2> Faija Choudhury </h2>
-        <img src="images/faija.jpg" alt="Faija" title="hello" width="200px" />
+    <section>
+      <br />
+      <h2>Faija Choudhury</h2>
+      <img src="images/faija.jpg" alt="Faija" title="hello" width="200px" />
 
-        <p>
-          I am a sophomore at Babson College. I chose Babson because it's one of the
-          best business school. On top of that I got a
-          <a href="https://possefoundation.org/"> Posse Scholarship</a> for
-          <a href="http://www.babson.edu/"> Babson</a> . I want to work on both
-          accounting and IT after graduation. I am looking for opportunities to
-          explore the career option.
-        </p>
+      <p>
+        I am a sophomore at Babson College. I chose Babson because it's one of
+        the best business school. On top of that I got a
+        <a href="https://possefoundation.org/"> Posse Scholarship</a> for
+        <a href="http://www.babson.edu/"> Babson</a> . I want to work on both
+        accounting and IT after graduation. I am looking for opportunities to
+        explore the career option.
+      </p>
 
-        <h2>My interest</h2>
-        <p>
-          I would consider my favorite sports to be
-          <em> <a href="https://wikipedia.org/wiki/Cricket">Cricket</a> </em> and
-          <em> <a href="https://wikipedia.org/wiki/badminton"> badminton </a></em> I
-          have not played cricket in a long time. However, I still occasionally play
-          badminton.
-        </p>
+      <h2>My interest</h2>
+      <p>
+        I would consider my favorite sports to be
+        <em> <a href="https://wikipedia.org/wiki/Cricket">Cricket</a> </em> and
+        <em> <a href="https://wikipedia.org/wiki/badminton"> badminton </a></em>
+        I have not played cricket in a long time. However, I still occasionally
+        play badminton.
+      </p>
 
-      </section>
+      <p>
+        <img src="" alt="places" id="slide" />
+
+        The places I have visited so far.
+        <div>
+        <script>
+            const slides = [
+                "Images/sritiShoudho.jpg",
+                "Images/shahidMinar.jpg",
+                "Images/coxbazar.jpg",
+
+            ]
+            let i = 0;
+            function slideshow (){
+                if (i == slides.length){
+                    i = 0;
+                }
+                document.querySelector("img").src = slides[i];
+                i++;
+                setTimeout(slideshow, 1);
+
+            }
+            document.getElementById("slide").onload = function(){
+                slideshow();
+            };
+
+            // It changes the images in the location of the logo 
+          </script>
+            
+            Place I want to Visit;
+            <script> 
+            <img src="Images/sunderban.jpg" alt="places" id="image"/>;
+
+            function enlargeImg(){
+            //player.src = images[1];
+            console.log (player)
+            let w = player.width;
+            let h = player.height;
+            w = w*1.75
+            h = h*1.75
+            player.width = w
+            player.height = h
+           }
+
+            function normalImg(){
+            //player.src = images[index];
+            let w = player.width
+            let h = player.height
+            w = w/1.75
+            h = h/1.75
+            player.width = w
+            player.height = h
+           }
+
+
+          document.getElementById("image").onmouseover= function(){
+            enlargeImg();
+          };
+
+          document.getElementById("image").onmouseout= function(){
+            normalImg();
+          };
+        </script>
+
+      </p>
+    </section>
 
     <section class="copyRight">
       <p>
@@ -72,7 +137,6 @@
 
         <!-- there is supposed to be an heart between made with and by Faija Choudhury. I am not sure why it is not showing -->
       </p>
-
     </section>
 
     <script>
@@ -84,9 +148,6 @@
         navLinks.style.right = "-200px";
       }
 
-      
-
     </script>
-  
   </body>
 </html>
